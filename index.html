@@ -1,34 +1,147 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mansi Singh Rajpoot - Portfolio</title>
+  <title>Mansi Singh Rajpoot Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #f0f8ff, #e0ffff);
-      animation: fadeIn 2s ease-in;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
-    h1 {
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #6a1b9a;
+      color: white;
+      padding: 2rem;
       text-align: center;
-      padding-top: 30px;
+      animation: fadeIn 2s ease-in-out;
+ }
+
+    header h1 {
+      font-size: 2.5rem;
     }
+
+    section {
+      padding: 2rem;
+      animation: slideIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    section.visible {
+      opacity: 1;
+    }
+
+    h2 {
+color: #6a1b9a;
+      margin-bottom: 1rem;
+    }
+
+    ul, .project, .certificates, .contact-info {
+      margin-left: 1rem;
+    }
+
+    footer {
+      background: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+   }
+
+    a {
+      color: #6a1b9a;
+    }
+
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideIn {
+      from {opacity: 0; transform: translateX(-50px);}
+      to {opacity: 1; transform: translateX(0);}
     }
   </style>
 </head>
 <body>
   <audio autoplay loop>
-  <source src="music_3c9f088e.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<h1>Welcome to Mansi Singh Rajpoot's Portfolio</h1>
-  <p style="text-align:center;">Work in Progress... More Sections Coming Soon!</p>
+    <source src="music_3c9f088e.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    <h1>Mansi Singh Rajpoot</h1>
+    <p>Data Analyst | Excel | Power BI | Python | SQL</p>
+  </header>
+
+  <section class="visible">
+    <h2>About Me</h2>
+    <p>I am a data analyst with a B.A. degree from Lucknow University and an O Level certification. I have completed virtual internships with Tata, Deloitte, and SimpleSkills. I enjoy turning data into insights and creating beautiful dashboards and visualizations.</p>
+  </section>
+
+  <section class="visible">
+    <h2>Skills</h2>
+    <ul>
+      <li>Excel, Power BI, Tableau</li>
+      <li>SQL, MySQL Server</li>
+      <li>Python (NumPy, Pandas, Seaborn)</li>
+      <li>Data Analysis & Visualization</li>
+    </ul>
+  </section>
+
+  <section class="visible">
+    <h2>Projects</h2>
+    <div class="project">
+      <p><strong>Domino's Dashboard</strong>: Built a full dashboard using Excel and Power BI to show sales, profits, and region-wise performance.</p>
+      <p><strong>Seaborn Project</strong>: Created multiple visualizations to explore gender-based trends and distributions.</p>
+      <p><strong>Supermarket Analysis</strong>: Analyzed shopping trends using Python, Pandas, and Matplotlib.</p>
+    </div>
+  </section>
+
+  <section class="visible">
+    <h2>Certificates</h2>
+    <div class="certificates">
+      <p>✔ O Level Certificate</p>
+      <p>✔ Tata Forage Virtual Internship – Generative AI Data Analyst</p>
+      <p>✔ Deloitte Virtual Internship – Data Analysis</p>
+      <p>✔ SimpleSkills – Excel Basics</p>
+    </div>
+  </section>
+
+  <section class="visible">
+    <h2>Resume</h2>
+    <p><a href="https://drive.google.com/your-resume-link" target="_blank">Click here to view my resume</a></p>
+  </section>
+
+  <section class="visible">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: mansisingh9530@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/manssi-gitch" target="_blank">manssi-gitch</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mansi Singh Rajpoot</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section, i) => {
+      setTimeout(() => section.classList.add('visible'), i * 500);
+    });
+  </script>
 </body>
 </html>
+
+
