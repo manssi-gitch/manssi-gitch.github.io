@@ -2,78 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mansi Singh Rajpoot Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mansi Singh Rajpoot | Portfolio</title>
   <style>
-    * {
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      animation: fadeIn 1s ease-in;
     }
-
-    body {
-      <audio autoplay loop>
-  <source src="music_3c9f088e.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-      background: linear-gradient(to right, #e0f7fa, #fce4ec);
-      color: #333;
-      overflow-x: hidden;
-    }
-
-    header {
-      background: #6a1b9a;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
- }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    section {
-      padding: 2rem;
-      animation: slideIn 1s ease forwards;
-      opacity: 0;
-    }
-
-    section.visible {
-      opacity: 1;
-    }
-
-    h2 {
-color: #6a1b9a;
-      margin-bottom: 1rem;
-    }
-
-    ul, .project, .certificates, .contact-info {
-      margin-left: 1rem;
-    }
-
-    footer {
-      background: #4a148c;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-   }
-
-    a {
-      color: #6a1b9a;
-    }
-
     @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(-20px);}
-      to {opacity: 1; transform: translateY(0);}
+ from {opacity: 0;}
+      to {opacity: 1;}
     }
-
-    @keyframes slideIn {
-      from {opacity: 0; transform: translateX(-50px);}
-      to {opacity: 1; transform: translateX(0);}
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #004466;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      background: #004466;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -85,67 +52,65 @@ color: #6a1b9a;
 
   <header>
     <h1>Mansi Singh Rajpoot</h1>
-    <p>Data Analyst | Excel | Power BI | Python | SQL</p>
+    <p>Aspiring Data Analyst | BA Graduate | O Level Certified</p>
   </header>
 
-  <section class="visible">
+  <section>
     <h2>About Me</h2>
-    <p>I am a data analyst with a B.A. degree from Lucknow University and an O Level certification. I have completed virtual internships with Tata, Deloitte, and SimpleSkills. I enjoy turning data into insights and creating beautiful dashboards and visualizations.</p>
+    <p>I am passionate about data analysis and business insights. I hold a B.A. from Lucknow University and have earned certifications in O Level and Data Analysis. I am fluent in Hindi and have basic English skills. Currently, I’m building my professional portfolio with real-world projects and virtual internships.</p>
   </section>
 
-  <section class="visible">
+  <section>
     <h2>Skills</h2>
     <ul>
-      <li>Excel, Power BI, Tableau</li>
+      <li>Excel, MS Word</li>
       <li>SQL, MySQL Server</li>
-      <li>Python (NumPy, Pandas, Seaborn)</li>
-      <li>Data Analysis & Visualization</li>
+      <li>Power BI, Tableau</li>
+      <li>NumPy, Pandas, Seaborn</li>
     </ul>
   </section>
 
-  <section class="visible">
+  <section>
     <h2>Projects</h2>
-    <div class="project">
-      <p><strong>Domino's Dashboard</strong>: Built a full dashboard using Excel and Power BI to show sales, profits, and region-wise performance.</p>
-      <p><strong>Seaborn Project</strong>: Created multiple visualizations to explore gender-based trends and distributions.</p>
-      <p><strong>Supermarket Analysis</strong>: Analyzed shopping trends using Python, Pandas, and Matplotlib.</p>
-    </div>
+    <ul>
+      <li>Domino’s Dashboard (Power BI)</li>
+      <li>Seaborn Data Visualization Project</li>
+      <li>Supermarket Sales Analysis</li>
+    </ul>
   </section>
 
-  <section class="visible">
+  <section>
     <h2>Certificates</h2>
-    <div class="certificates">
-      <p>✔ O Level Certificate</p>
-      <p>✔ Tata Forage Virtual Internship – Generative AI Data Analyst</p>
-      <p>✔ Deloitte Virtual Internship – Data Analysis</p>
-      <p>✔ SimpleSkills – Excel Basics</p>
-    </div>
+    <ul>
+      <li>O Level Certificate</li>
+      <li>SimpleSkills: Excel Internship</li>
+      <li>Deloitte: Data Analysis Internship</li>
+      <li>Tata Forage: Generative AI Internship</li>
+      <li><strong>Data Analysis Certificate</strong></li>
+    </ul>
   </section>
 
-  <section class="visible">
+  <section>
     <h2>Resume</h2>
-    <p><a href="https://drive.google.com/your-resume-link" target="_blank">Click here to view my resume</a></p>
+    <p><a href="https://drive.google.com/your-resume-link" target="_blank">Download Resume (PDF)</a></p>
   </section>
 
-  <section class="visible">
+  <section>
     <h2>Contact</h2>
-    <div class="contact-info">
-      <p>Email: mansisingh9530@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/manssi-gitch" target="_blank">manssi-gitch</a></p>
-    </div>
+    <p>Email: mansisingh9530@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/manssi-gitch" target="_blank">manssi-gitch</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Mansi Singh Rajpoot</p>
+    <p>&copy; 2025 Mansi Singh Rajpoot</p>
   </footer>
-
-  <script>
-    const sections = document.querySelectorAll('section');
-    sections.forEach((section, i) => {
-      setTimeout(() => section.classList.add('visible'), i * 500);
-    });
-  </script>
 </body>
 </html>
 
+      
 
+    
+
+      
+   
+    
